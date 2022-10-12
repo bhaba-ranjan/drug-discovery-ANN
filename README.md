@@ -21,8 +21,9 @@ Choosing the right for L1 regularization was another challenging task. To come u
 `bigger values first`. They did **not let the model fit** to the data. Then I tried smaller values which **led to overfitting**. Sort of **like binary search** I used intermediate values to come up with the value that worked
 
 <h3>Loss Function</h3>
+
 Initially, I used `Binary Cross Entropy` as the loss function but the issue was it was not able to produce good results. 
-`As it does not take imbalance into account`. Also, gradient descent updates the weight for prediction towards the confident class. Because, the majority class dominates the loss function. `Binary Focal Cross Entropy` however, was a better choice because it weights class prediction and forces the model to learn parameters towards the hard to classify class. The following is the distinction between model F1-Score during training and testing using Binary Cross Entropy on the Right and Binary Focal Cross Entropy on the Left. As it is clear that Focal Cross Entropy converges a lot better than the counterpart Binary cross entropy.!
+`As it does not take imbalance into account`. Also, gradient descent updates the weight for prediction towards the confident class. Because, the majority class dominates the loss function. `Binary Focal Cross Entropy` however, was a better choice because it weights class prediction and forces the model to learn parameters towards the hard to classify class. The following is the distinction between model F1-Score during training and testing using Binary Cross Entropy on the Right and Binary Focal Cross Entropy on the Left. As it is clear that Focal Cross Entropy converges a lot better than the counterpart Binary cross entropy.
 
 # Decision Trees
 
