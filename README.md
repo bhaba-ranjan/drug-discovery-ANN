@@ -17,7 +17,7 @@ trees by `6%`.
 The majority of effort went `into choosing the best size neural network` with respective `regularization` hypermeter. 
 As soon as I started training **without regularization** the NN started **overfitting** to the data starting from _2nd iteration_. After some research it was apparent to use regularization parameters. I had 3 options: `L1, L2 regularization and Dropout` method. L1 and L2 penalizes weights while drop out omits certain neurons. `L1 could make a weight 0` while `L2 is extremely slow` in pushing weight `towards 0`. I did not use the feature subset. In other words, I wanted the `NN to decide which feature to omit/reduce` by using loss fucntion and backpropagation. I wanted the weights to be 0 for irrelevant features so, I used `L1 regularization`.
 
-Choosing the right for L1 regularization was another challenging task. To come up with a value that works, I tried different 𝝺 values. Went with
+Choosing the right value for L1 regularization was another challenging task. To come up with a value that works, I tried different 𝝺 values. Went with
 `bigger values first`. They did **not let the model fit** to the data. Then I tried smaller values which **led to overfitting**. Sort of like **binary search** I used intermediate values to come up with the value that worked.
 
 <h3>Loss Function</h3>
