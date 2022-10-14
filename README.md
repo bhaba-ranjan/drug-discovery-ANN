@@ -10,7 +10,7 @@
  ## Analysis
 
 Neural networks worked promisingly in this task and outperformed accuracy of decision
-trees by a whopping `13%`. 
+trees by `6%`. 
 
 <h3>Regularization</h3>
 
